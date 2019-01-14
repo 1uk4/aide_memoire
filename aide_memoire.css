@@ -1,0 +1,69 @@
+
+.background {
+	background-color: black; 					/*fond d'écran couleur, plus bas image*/
+	background-image: url(fjdka/fjad.png);
+	background-repeat: no-repeat;				/*pour ne pas que ca se répète*/
+	background-position: center center;			/*placer le fond ou on veut*/
+	background-color: rgba(300, 100, 134, 0.9);	/*donne la couleur et ausssi la transparence*/
+}
+
+.text {
+	color: blue;								/*couleur du text*/
+	font-weight: bold; 							/*mettre en gras*/
+	font-size: 20px;							/*granderu du text*/
+	font-family: contact, impact, ...			/*changer le  type de text*/
+	font-style: italic;							/*met en italic*/
+	text-decoration: overline, underline, line-through; /*surligne, sousligne et le barre*/
+	text-align: right, middle, right,justify;			/*placer le texte à gauche/millieu/droite/prenne toute la largeur*/
+	opacity: 0-1;								/*donner la transparence*/
+	text-shadow: ;								/*faire des ombre sous les lettres*/
+	list-style-type: none;						/*enlève la liste à puce*/
+	display: inline-block;						/*voir un élément comme un block*/
+}
+
+.mise_en_page{
+	float: left, right;							/*flottement d'une image par rapport à un text par exemple*/
+	clear: left, right, both;					/*pour enlever le flottement*/
+	text-align: justify, left, right, center;   /*permet de centrer, placer à gauche,... tout les élément boite y compris*/
+}
+
+.bordure{
+	border: 3px /*largeur*/, red, solid /*dashed,double,...*/; /*done la produre*/
+	padding:3px; 								/*écarter la bording ou la rapprocher*/
+	border-radius: 10px;						/*arrondi les bordures*/
+	box-shadow: 5px 3px 1px black;				/*ombre de la bordure, horizontal, vertical, dégrader et couleur*/
+	margin:auto;								/*centre le block sur la page si donner une largeur*/
+}
+
+.dynamic:hover{									/*dessus, "active" clique sur lien, "focus" pour sélectionner, "visited" lien déja visité*/
+
+}
+
+.box {
+	width: 50%;									/*largeur*/
+	height: 60px;								/*hauteur*/
+	min-width: 60px;							/*largeur minimal*/
+	max-width: 700px;							/*largeur minimal*/
+	overflow: hidden, visible, scroll, auto;	/*caché, visible par défault, défiler, auto navigateur choisit ce qu'il fait */
+	word-wrap: break-word, ;					/*coupe le mot si trop long, */
+}
+
+.flex-box {
+	display: flex; 								/*metttre ca dans le conteneur*/
+	flex-direction: column, row;				/*donne la direction de l'alignement, vont se resserer sur la même ligne*/
+	flex-wrap: wrap;							/*revien à la ligne quand il y a plus de place*/
+	justify-content: flex-start, flex-end, center, space-between, space-around;		/*aligner les boite au début/fin, centre, espace entre, around laisse aussi espace dans les bords*/
+	align-items: stretch, flex-start/end, center, baseline;						/*pour l'axe secondaire, sur tout l'axe*/
+
+	display: inline-block;						/*permet d'aligner les blocks mais oldschool*/
+	vertical-align: top, bottom, middle;				/*holdschool, aligner en haut ou en bas*/
+}
+
+.autre{
+	position: absolute;							/*place élément sur la page, peu être en rapport avec un élément relative*/
+	right: 10px;
+	left: 1px;
+	position: relative;							/*placer sur la page mais pas fix*/
+	right: 5px;
+	position: fixed;							/*fixe l'élément sur l'écran*/
+}

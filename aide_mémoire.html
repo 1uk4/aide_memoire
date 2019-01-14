@@ -1,0 +1,76 @@
+<link rel="stylesheet" type="text/css" href="aide_memoire.css">		<!-- connect fichier css et html-->
+<!-- prensre des icones--> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<html lang="fr">					<!-- indique la langue de la page-->
+<br/>								<!-- retour à la ligne-->
+<head></head>						<!-- caché, non visible-->
+<meta charset="utf-8">				<!-- traduire ce qu'on a écrit-->
+<body></body>						<!--corp de la page -->
+<title></title>						<!--nom de l'onglet -->
+<a href=""></a>						<!-- a= lien, href= lien ou chemin-->
+<a href="" target="_blank"></a>		<!--ouvre le lien dans un nouveau onglet -->
+<a href="" title="je t'aime"></a>	<!-- va afficher ca dans la bulle quand on passe dessus-->
+<a href="mailto: monmail@gmail.com"></a>	<!--envoye un email -->
+<a href="fichier à télécharger.zip"></a>	<!--va télécharger le fichier -->
+<a href="../nom.html"></a>			<!-- aller dans un fichier "PARENT"-->
+
+<a href="#cuisine"></a>				<!-- lien pour envoyer à l'id cuisine-->
+<p id="cuisine"></p>				<!--mais que si id=mot du lien, peu pas avoir 2 id identique dans la pas -->
+<a href="fichier.html#ancre"></a>	<!--pour aller dans une ancre à une autre page -->
+
+<img width="40" src="">				<!--width pour la grandeur, src pour la source, le chemin img toujours dans un paragraphe de texte-->
+<img src="" alt="">					<!-- alt pour les aveugles et les robots -->
+<a href="image grande"> <img src="image mini"></a>	<!-- agrandi l'image si on clique dessus -->
+<figure></figure>					<!-- mettre en valeur une image, mettre img et figcaption dedans-->
+<figcaption></figcaption>			<!-- mettre une légende sous une image-->
+<p></p>								<!-- paragraphe-->
+<p class="p1"></p>					<!--nommé une balise -->
+<h1></h1>							<!--texte en grand, plus important -->
+<header></header>					<!-- en-tête-->
+<footer></footer>					<!--pied de page -->
+<em></em>							<!--italique -->
+<strong></strong>					<!-- en gras-->
+<mark></mark>						<!-- surligné, jauen par défaut-->
+<nav></nav>							<!-- menu navigation-->
+<ul></ul>							<!-- pour contenir une liste à puce, la délimite-->
+<ol></ol>							<!-- =li mais liste numéroté-->
+<li></li>							<!-- liste à puce-->
+<style type="text/css"></style>		<!-- se trouve dans head, écrit css sur la même page-->
+<p style="color: blue;"></p>		<!-- ou écrire directement dans la balise-->
+<div></div>							<!--  balise générique fais rien, dois définir  = paragraphe-->
+<span></span>						<!-- balise générique, va à  l'intérieur d'un paragraphe, pour ciblé un mot avec une class-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j3khZiP4KFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>								<!--mettre un carré avec une vidéo dedans,utilisé intégrer 	sur youtube -->
+&copy;								<!-- signe copyright-->
+<section></section>
+<center></center>					<!-- centre les élément dedans-->
+<aside></aside>						<!-- contient des informations complémentaire, (à droite sur wikipédia)-->
+<article></article>					<!-- contient truc, article par exemple autonome de la page, peut etre repris par un autre site-->
+<span lang="en"></span>				<!-- indiquer un changement de langue, ici en anglais-->
+
+<<?php <!-- change de langage au milieu--> echo ?>
+<form action="traitement.php" method="post"></form> <!-- "action" pour donner la page PHP, "method" pour dire si ca passe par l'adresse de la page (get, 255 caractère max) ou "post"-->
+<input type="text" name="pseudo" id=""> 	<!-- "input" carré zone de texte 1 ligne, "type" donne pour quoi c'est, "text" pour du text, "password" cache ce qui est écrit, "mail" accepteque si adresse mail valide, "url" accepte que si comment par https, "tel" pour un num. de téléphone, "number" nombre ("min" "max" et "step"), "range" curseur ("min" "max" "step"), "color", "date", "search" recherche, navigateur décide comment, "checkbox" case à coché(peut rejouter "checked", déja sélécetionner), "radio" choix multiple(groupe besoin même "name" mais pas la même "value"(sert à savoir ce que le visiteur à sélectionner)-->
+<label for=""></label>						<!-- écrit texte devant "input", "for" pour doner l'ID du champs à remplir-->
+<input type="etxt" name="" size="20" maxlength="15" placeholder="lulu" value=""> <!--"size" nombre de caractère , "maxlength" nombre de caractère maximum, "placeholder" nom à l'intérieur (disparati) "name" pour après traiter les informations, "value" pour préremplire le champ-->
+<textarea autofocus required></textarea> <!-- comme "input" mais plusieur ligne, modifiable en CSS avec "width, height", "autofocus" curseur par défaut dessus,"required" necessaire pour aller plus loin-->
+<select></select>					<!-- menu déroulant, remplace "input"-->
+<option selected="X"></option>					<!-- va dans "select" donne les possibilité, pas de "name", "selected" pour sélécationner par défaut une valeur-->
+<optgroup label=""></optgroup>				<!-- fait des groupes pour les "option"-->
+<fieldset> <legend>titre de fieldset</legend></fieldset> <!-- fais des gpupes, encadré-->
+<input type="submit" name="envoyer">		<!-- bouton d'envoi ou de validation,...-->
+
+<table>									<!-- tableau -->
+		<CAPTION></CAPTION>				<!-- TITRE du tableau-->
+		<thead>							<!-- séparer différente partie un tableau , "tbody" "tfoot"-->	
+		<th >entête du tableau</th>		<!-- titre de la colonne-->
+		<th colspan="2"> </th>			<!-- fusionne 2 cellules lignes-->
+		</thead>
+		<tr>							<!-- ligne du tableau-->
+			<td rowspan="2">						<!-- "td"colonne, fusionne 2 cellules colones-->
+				
+			</td>
+		</tr>
+</table>
+<audio src="" controls></audio> <!-- mettre un audio, rien d'afficher, "controls" bouton play/pause -->
+<video autoplay loop width="" height="" poster=""> <source src=""> <source src=""></video> <!-- "autoplay" mettre vidéo automatiquement, "loop" tourne en boucle, mettre source entre deux , navigateur choisit celui qu'il préfère, "poster" met une image de présentation de la vidéo-->
+<script type="text/javascript" src=""></script> <!-- permet de mettre du javascript dans le code-->
+<button onclick="alert('super !')">clique</button> <!-- code JS, affiche super quand clique dessus-->
